@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browsertest": "npx browserslist 'defaults'",
+    "config": "npx webpack --config webpack.config.js",
+    "develop": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",

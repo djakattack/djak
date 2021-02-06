@@ -1,9 +1,8 @@
 import React from 'react'
+import TitleContainer from './components/Title'
 
 const App = ({ props }) => (
-    <div>
-        Webpack HMR works
-    </div>
+    <TitleContainer />
 )
 
 export default App

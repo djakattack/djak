@@ -1,0 +1,15 @@
+body {
+    background-color: #6EA3DB;
+}
+
+.container {
+    background-color: #BD3AE6;
+    width: 2rem;
+    height: 3rem;
+}
+
+.component {
+    background-color: #6EA3DB;
+    width: 1rem;
+    height: 2rem;
+}

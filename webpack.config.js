@@ -59,17 +59,18 @@ module.exports = env => {
                     }]
                 },
                 {
-                    test: /\.css$/i,
+                    test: /\.s[ac]ss$/i,
                     include: path.resolve(__dirname, 'src'),
-                    exclude: /node_modules/,
                     use: [
+                        "style-loader",
+                        "css-loader",
                         {
-                            loader: MiniCssExtractPlugin.loader,
-                        },
-                        {
-                            loader: 'css-loader',
+                            loader: 'sass-loader',
                             options: {
-                                importLoaders: 0
+                                implementation: require('sass'),
+                                sassOptions: {
+                                    fiber: false,
+                                }
                             }
                         }
                     ]

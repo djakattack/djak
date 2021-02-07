@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import './index.css'
+import './main.scss'
 
 // Opt-in to Webpack hot module replacement
 if(module.hot) module.hot.accept()

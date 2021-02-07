@@ -2,7 +2,7 @@ import React from 'react'
 import Title from './Title'
 
 const TitleContainer = ({ props }) => (
-    <div className="container">
+    <div className="title">
         <Title />
     </div>
 )

@@ -1,0 +1,12 @@
+.title {
+    &-name{
+        font-family: 'Architects Daughter';
+        color: $name-color;
+    }
+    font-size: 4rem;
+    margin-left: 35rem;
+    margin-top: 15rem;
+    width: 30rem;
+    // background-color: #FFFFFF;
+    position: absolute;
+}

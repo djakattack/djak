@@ -2,7 +2,11 @@ import React from 'react'
 
 const Nav = ({ props }) => (
     <span>
-        Nav
+        Home<br />
+        Art<br />
+        Code<br />
+        CV<br />
+        Science
     </span>
 )
 

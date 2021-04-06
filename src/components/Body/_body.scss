@@ -1,0 +1,26 @@
+.content {
+    // CSS flex box
+    // CSS grid
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    // MINE
+    margin-left: 90rem;
+    margin-top: 25rem;
+    width: 40rem;
+    position: absolute;
+    &__paragraph {
+        font-weight: weight(bold);
+        &:hover{
+            color: pink;
+        }
+    }
+    &__paragraph2 {
+        font-weight: weight(bold);
+        &:hover{
+            color: blue;
+        }
+    }
+}

@@ -1,5 +1,32 @@
-@mixin flexCenter {
+// THEMES
+@import "./themes/spring";
+// @import "./themes/summer";
+// @import "./themes/autumn";
+// @import "./themes/winter";
+
+@mixin flexCenter ($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+// Can we do $light-theme: true, or $spring-theme: true, or .... to simply type in the season in the .light class in _body.scss to change the theme?
+// Is there a way to create a function to identify the season based on the current date and then select the theme accordingly?
+// Light mode and dark mode for each season?
+// Light mode and dark mode in general?  Likely done with a light and dark theme mixin and then a separate season mixin.
+@mixin theme($light-theme: true){
+    @if $light-theme {
+        // background: lighten($body-color, 100%);
+        color: darken($text-color, 100%);
+    };
+};
+
+@mixin background($no: true){
+    @if $no{
+        background-image: linear-gradient(to right, $body-accent-color, $body-color);
+        background-size: cover;
+    } @else {
+        background-image: linear-gradient(to right, $body-accent-color, $body-color), url($background-image);
+        background-size: cover;
+    }
 }

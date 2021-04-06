@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Body = ({ props }) => (
-    <div>
+    <div className="light">
         <div className="content__paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam corrupti optio dolorem porro mollitia alias maiores laboriosam debitis natus inventore harum, architecto delectus quidem pariatur saepe quas perspiciatis praesentium est.
         </div>
-        <div className="content__paragraph2">
+        <div className="content__paragraph">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam corrupti optio dolorem porro mollitia alias maiores laboriosam debitis natus inventore harum, architecto delectus quidem pariatur saepe quas perspiciatis praesentium est.
         </div>
     </div>

@@ -1,3 +1,7 @@
+// @NOTE:
+// Need to fix issue where things to not compile properly after running npm run build.
+
+
 const path = require('path')
 const webpack = require('webpack')
 const { env } = require('process')

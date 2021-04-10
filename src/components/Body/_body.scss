@@ -1,18 +1,35 @@
 .content {
-    // CSS flex box
-    // CSS grid
-    @include flexCenter(row);
-        // MINE
+    // @Note    CSS flex box
+    //          CSS grid
+    width: 80%;
+    margin: 0, auto;
+    // ## EE0132E
     // font-size: 2rem;
     // margin-left: 90rem;
     // margin-top: 25rem;
     // width: 40rem;
     // position: absolute;
-    #{&}__paragraph {
+    // EE0132E ##
+    #{&}__paragraph1 {
         font-weight: weight(bold);
         &:hover{
             color: pink;
         }
+    };
+
+    #{&}__paragraph2 {
+        @extend .content__paragraph1;
+
+        &:hover{
+            color: $body-accent-color
+        }
+    }
+
+    @include mobile{
+        @include flexCenter(column);
+    };
+    @include responsive{
+        @include flexCenter(row);
     }
 }
 

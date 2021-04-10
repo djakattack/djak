@@ -4,10 +4,11 @@
 // @import "./themes/autumn";
 // @import "./themes/winter";
 
-@mixin flexCenter ($direction) {
+@mixin flexCenter($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: $direction;
 }
 
 // Can we do $light-theme: true, or $spring-theme: true, or .... to simply type in the season in the .light class in _body.scss to change the theme?
@@ -20,6 +21,22 @@
         color: darken($text-color, 100%);
     };
 };
+
+// Using this type of Mixin
+// .light{
+//     @include theme($light-theme: true);
+// }
+
+@mixin mobile {
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+@mixin responsive {
+    @media (min-width: $mobile){
+        @content;
+    }
+}
 
 @mixin background($no: true){
     @if $no{
